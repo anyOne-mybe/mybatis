@@ -31,6 +31,8 @@
             <property name="enableSubPackages" value="true"/>  
         </javaClientGenerator>  
         <!-- 要生成哪些表-->  
-        <table tableName="idea_resource" domainObjectName="IdeaResource" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>  
+        <table tableName="idea_resource" domainObjectName="IdeaResource" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
+		<columnOverride column="available" javaType="Boolean"></columnOverride>
+		</table>  
     </context>  
 </generatorConfiguration>  
